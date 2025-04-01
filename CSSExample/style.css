@@ -73,6 +73,11 @@ div{
 #ryou:hover{
     filter:opacity(30%);
 }
-
-
-
+#cursor-pointer{
+    cursor: pointer;
+    margin-right:10px;
+}
+#cursor-help{
+    cursor: help;
+    margin-right:10px;
+}
