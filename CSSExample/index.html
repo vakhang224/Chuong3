@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Implement</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .internalcss h3{
+            text-align: center;
+        }
+        #bgr-color{
+            background-color: aqua;
+        }
+        
+        #bgr-image{
+            width:auto;
+            height: 500px;
+            background-image: url("image.jpg");
+            background-position: center;
+        }
+        #bgr-repeat{
+            background-image: url(image2.jpg);
+            background-size: 100px;
+            background-repeat: repeat !important;
+            color:white;
+            font-weight: bold;
+        }
+        #bgr-position{
+            background-image: url(image2.jpg);
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-position: top right;
+        }
+        #bgr-attachment{
+            background-image: url(image2.jpg);
+            background-repeat: no-repeat;
+            background-size: 100px;
+            background-position: center;
+            height: 500px;
+            background-attachment: local;
+            overflow: scroll; 
+        }
+        #opacity{
+            background-image: url(image2.jpg);
+            background-repeat: no-repeat;
+            opacity: 20%;
+            height: 300px;
+        }
+        #gradient{
+            background-image: radial-gradient(blue,red,yellow,green);
+            height:200px;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        #size{
+            width: 50px;
+            height: 50px;
+        }
+        #padding{
+            padding: 30px;
+            width: 50px;
+            height: 50px;
+        }
+        #margin{
+            width: 50px;
+            height: 50px;
+            margin-top: 50px;
+            margin-left: 70px;
+            margin-bottom: 50px;
+        }
+        #border-width{
+            width: 50px;
+            height: 50px;
+            border-width: 10px;
+        }
+        #border-style{
+            width: 50px;
+            height: 50px;
+            border-style:dashed;
+        }
+        #border-radius{
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+        }
+        #border-color{
+            width: 50px;
+            height: 50px;
+            border-color: greenyellow;
+        }
+        #box-shadow{
+            width: 50px;
+            height: 50px;
+            box-shadow: 10px 10px 3px;
+            margin-bottom: 20px;
+        }
+        #inline p{
+            border: none;
+            background-color: blue;
+            display:inline
+        }
+        #inline span{
+            background-color: red;
+            color:white;
+        }
+        #block p{
+            border: none;
+            background-color: blue;
+            display: block;
+        }
+        #block span{
+            background-color: red;
+            color:white;
+        }
+        #inline-block p{
+            border: none;
+            background-color: blue;
+            display: inline-block;
+        }
+        #inline-block span{
+            background-color: red;
+            color:white;
+        }
+        #flex p{
+            border: none;
+            background-color: blue;
+            display: flex;
+        }
+        #flex span{
+            background-color: red;
+            color:white;
+        }
+        #grid p{
+            border: none;
+            background-color: blue;
+            display: grid;
+        }
+        #grid span{
+            background-color: red;
+            color:white;
+        }
+        #table p{
+            border: none;
+            background-color: blue;
+            display: table;
+        }
+        #table span{
+            background-color: red;
+            color:white;
+        }
+        #position{
+            padding: 30px;
+            width:50px;
+        }
+        #position p{
+            position: static;
+            left: 30px;
+            right:30px;
+        }
+        #float{
+            float:right;
+        }
+        #flexbox{
+            display:flex;
+            justify-content: space-between;
+        }
+        #gridbox{
+            display:grid;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3 style="text-align: center;">Inline</h3>
+        <h2>Text Styling</h4>
+        <p style="font-family:'Courier New', Courier;">Font Family</p>
+        <p style="font-size: 30px">Font Size</p>
+        <p style="font-weight: bold;">Font Weight</p>
+        <p style="text-align: right;">Text Align</p>
+        <p style="text-decoration: line-through;">Text Decoration</p>
+        <p style="line-height: 1px;">Line Height</p>
+        <p style="letter-spacing: 5px;">Letter Spacing</p>
+        <p style="word-spacing: 20px;">Word Spacing</p>
+        <p style="text-transform: lowercase;">TEXT TRANSFORM</p>
+        <p style="color: red">Color</p>
+        <p style="text-shadow: 10px 10px 5px blue;">Text Shadow</p>
+    </div>
+    <div class="internalcss">
+        <h3>Internal</h3>
+        <h2>Background Styling</h2>
+        <div id="bgr-color"><p>Background Color</p></div>
+        <div id="bgr-image"><p>Background Image & Size</p></div>
+        <div id="bgr-repeat"><p>Background Repeat</p></div>
+        <div id="bgr-position"><p>Background Position</p></div>
+        <div id="bgr-attachment">
+            <p>Background Attachment</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat non aliquam ea eveniet, veniam hic et ad adipisci? Voluptatum commodi neque non. Quia minima, esse quo id nisi nobis.</p>
+        </div>
+        <div id="opacity"></div>
+        <div id="gradient"><p>Gradient</p></div>
+        <h2>Layout Styling</h2>
+        <div id="size"><p>Size</p></div>
+        <div id="padding"><p>Padding</p></div>
+        <div id="margin"><p>Margin</p></div>
+        <div id="border-width"><p>Border Width</p></div>
+        <div id="border-style"><p>Border Style</p></div>
+        <div id="border-radius"><p>Border Radius</p></div>
+        <div id="border-color"><p>Border Color</p></div>
+        <div id="box-shadow"><p>Box Shadow</p></div>
+            <h2>Display</h2>
+            <p>Display Inline:</p>
+            <div id="inline">
+                <p>
+                    <span>Text 1</span>
+                    <span>Text 2</span>
+                    <span>Text 3</span>
+                </p>
+                <p>
+                    <span>Text 1</span>
+                    <span>Text 2</span>
+                    <span>Text 3</span>
+                </p>
+            </div>
+            <br>
+            <p>Display Block:</p>
+            <div id="block">
+                <p>
+                    <span>Text 1</span>
+                    <span>Text 2</span>
+                    <span>Text 3</span>
+                </p>
+                <p>
+                    <span>Text 1</span>
+                    <span>Text 2</span>
+                    <span>Text 3</span>
+                </p>
+            </div>
+            <br>
+            <p>Display Inline-Block:</p>
+            <div id="inline-block">
+                <p>
+                    <span>Text 1</span>
+                    <span>Text 2</span>
+                    <span>Text 3</span>
+                </p>
+                <p>
+                    <span>Text 1</span>
+                    <span>Text 2</span>
+                    <span>Text 3</span>
+                </p>
+            </div>
+            <br>
+            <p>Display Flex:</p>
+            <div id="flex">
+                <p>
+                    <span>Text 1</span>
+                    <span>Text 2</span>
+                    <span>Text 3</span>
+                </p>
+                <p>
+                    <span>Text 1</span>
+                    <span>Text 2</span>
+                    <span>Text 3</span>
+                </p>
+            </div>
+            <br>
+            <p>Display Grid:</p>
+            <div id="grid">
+                <p>
+                    <span>Text 1</span>
+                    <span>Text 2</span>
+                    <span>Text 3</span>
+                </p>
+                <p>
+                    <span>Text 1</span>
+                    <span>Text 2</span>
+                    <span>Text 3</span>
+                </p>
+            </div>
+            <br>
+            <p>Display Table:</p>
+            <div id="table">
+                <p>
+                    <span>Text 1</span>
+                    <span>Text 2</span>
+                    <span>Text 3</span>
+                </p>
+                <p>
+                    <span>Text 1</span>
+                    <span>Text 2</span>
+                    <span>Text 3</span>
+                </p>
+            </div>
+            <br>
+        <br><br><br><br><br>
+        <h2>Flexbox (Giao diện 1 chiều)</h2>
+        <div id="flexbox">
+            <p>
+                <span>Text 1</span>
+                <span>Text 2</span>
+                <span>Text 3</span>
+            </p>
+            <p>
+                <span>Text 4</span>
+                <span>Text 5</span>
+                <span>Text 6</span>
+            </p>
+        </div>
+        <h2>Gridbox (Giao diện 2 chiều)</h2>
+        <div id="gridbox">
+            <p>
+                <span>Text 1</span>
+                <span>Text 2</span>
+                <span>Text 3</span>
+            </p>
+            <p>
+                <span>Text 4</span>
+                <span>Text 5</span>
+                <span>Text 6</span>
+            </p>
+        </div>
+    </div>
+    <div>
+        <h3>External</h3>
+        <h2>Effects & Transisions</h2>
+        <h4>Transition & Transform</h4>
+        <div style="display: flex; border:none">
+            <div id="transition-box">Transition Box</div>
+            <div id="hover-box">Hover Box</div>
+            <div id="transform-box-rotate">Transform Box: Rotate</div>
+            <div id="transform-box-scale">Transform Box: Scale</div>
+            <div id="transform-box-translate">Transform Box: Translate</div>
+            <div id="transform-box-skew">Transform Box: Skew</div>
+        </div>
+        <h4>Filter</h4>
+        <div id="bocchitherock" style="display: flex; border:none">
+            <img src="bocchi.jpg" alt="bocchi" id="bocchi">
+            <img src="kita.jpg" alt="kita" id="kita">
+            <img src="nijika.jpg" alt="nijika" id="nijika">
+            <img src="ryou.jpg" alt="ryou" id="ryou">
+        </div>
+        <h4></h4>
+    </div>
+    <a href="../WebsiteGioiThieuSanPham/index.html">Chuyển link</a>
+</body>
+</html>

@@ -1,0 +1,78 @@
+div{
+    border-width: 2px;
+    border-color: gray;
+    border-style: groove;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+#transition-box{
+    margin-right:30px;
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+    transition: all 2s ease-in-out, background-color 2s linear;
+}
+#transition-box:hover{
+    background-color: yellow;
+}
+#hover-box{
+    margin-right:30px;
+    height: 80px;
+    width: 80px;
+    background-color: red;
+}
+#hover-box:hover{
+    background-color: greenyellow;
+}
+#transform-box-rotate{
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+}
+#transform-box-rotate:hover{
+    transform: rotate(45deg);
+}
+#transform-box-scale{
+    width:80px;
+    height:80px;
+    background-color: cyan;
+}
+#transform-box-scale:hover{
+    transform: scale(2);
+}
+#transform-box-translate{
+    width:80px;
+    height:80px;
+    background-color: gray;
+}
+#transform-box-translate:hover{
+    transform: translate(20px, 10px);
+}
+#transform-box-skew{
+    width:80px;
+    height:80px;
+    background-color: violet;
+}
+#transform-box-skew:hover{
+    transform: skewY(-20deg);
+}
+#bocchitherock img{
+    width: 200px;
+    height: 200px;
+    margin-right:32px;
+}
+#bocchi:hover{
+    filter: blur(5px);
+}
+#kita:hover{
+    filter:grayscale(80%);
+}
+#nijika:hover{
+    filter:brightness(60%);
+}
+#ryou:hover{
+    filter:opacity(30%);
+}
+
+
+
